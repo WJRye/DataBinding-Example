@@ -58,7 +58,7 @@ You can bind arbitrary listener you want. For example:
         };
     }
 ```
-This method addTextChangedListener is in LoginActivity class.
+The method addTextChangedListener is in the LoginActivity class.
 
 ## Collections
 You can use collections in the layout. For example:
