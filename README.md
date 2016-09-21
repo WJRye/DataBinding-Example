@@ -5,10 +5,12 @@ This shows how to use **[Data Binding Library](https://developer.android.com/top
 <div>
 <p>
 <img src="./ScreenShot/device-2016-09-21-152330.png" width = "360" height = "640" alt="Using ViewPager and RecyclerView with Data Binding Library" align="left" />
-<img src="./ScreenShot/device-2016-09-21-152432.png" width = "360" height = "640" alt="Using ViewPager and RecyclerView with Data Binding Library" align="right" />
+<img src="./ScreenShot/device-2016-09-21-152432.png" width = "360" height = "640" alt="Using ViewPager and RecyclerView with Data Binding Library" align="center" />
 </p>
 </div>
-
+        
+        
+<p></p>
 ## Listener Bindings
 You can bind arbitrary listener you want. For example:
 ```
