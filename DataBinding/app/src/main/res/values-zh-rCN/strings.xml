@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">电话本</string>
+    <string name="user_name">用户名</string>
+    <string name="user_real_name">用户名为123</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="loading">正在加载...</string>
+    <string name="calllogs">通话记录</string>
+    <string name="contacts">联系人</string>
+    <string name="dial">拨号</string>
+    <string name="stranger">陌生人</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="age">年龄：</string>
+    <string name="sex">性别：</string>
+    <string name="email">邮件：</string>
+    <string name="address">地址：</string>
+    <string name="number">电话：</string>
+    <string name="top">置顶</string>
+    <string name="delete">删除</string>
+
+</resources>

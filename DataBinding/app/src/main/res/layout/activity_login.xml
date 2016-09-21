@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="UserBinding">
+
+        <variable
+            name="listener"
+            type="com.wj.databinding.LoginActivity" />
+
+        <variable
+            name="user"
+            type="com.wj.databinding.model.User" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context=".LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_45dp"
+                    android:hint="@string/user_name"
+                    android:inputType="text"
+                    android:text="@{user.name}"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="@dimen/textSize_14sp"
+                    app:addTextChangedListener="@{listener.addTextChangedListener}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_45dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:text="@{user.password}"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="@dimen/textSize_14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:gravity="center"
+                android:onClick="@{listener.onClick}"
+                android:text="@string/login"
+                android:textColor="@color/textColorDark"
+                android:textSize="@dimen/textSize_16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

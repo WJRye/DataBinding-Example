@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MainBinding">
+
+
+        <variable
+            name="listener"
+            type="com.wj.databinding.module.main.MainActivity" />
+    </data>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.wj.databinding.module.main.MainActivity">
+
+
+            <LinearLayout
+                android:id="@+id/main_bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_56dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/main_calllogs"
+                    style="@style/BottomTextView"
+                    android:drawableTop="@drawable/calllogs_selector"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@string/calllogs" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/main_contacts"
+                    style="@style/BottomTextView"
+                    android:drawableTop="@drawable/contacts_selector"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@string/contacts" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/main_dial"
+                    style="@style/BottomTextView"
+                    android:drawableTop="@drawable/dial_selector"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@string/dial" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/main_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:layout_above="@id/main_bottom_menu"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/main_line"
+                app:onPageChangeListener="@{listener.addOnPageChangeListener}" />
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/main_navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
+    </android.support.v4.widget.DrawerLayout>
+</layout>

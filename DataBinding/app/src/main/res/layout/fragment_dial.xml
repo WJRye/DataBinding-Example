@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data class="FragmentDialBinding">
+
+        <import type="java.util.ArrayList" />
+
+        <variable
+            name="index"
+            type="int" />
+
+        <variable
+            name="list"
+            type="ArrayList&lt;String&gt;" />
+
+        <variable
+            name="listener"
+            type="com.wj.databinding.module.main.DialFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/dial_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="right|bottom"
+            android:hint="0"
+            android:paddingLeft="@dimen/padding_15dp"
+            android:paddingRight="@dimen/padding_15dp"
+            android:singleLine="true"
+            android:textColor="@color/textColorDark"
+            android:textSize="@dimen/textSize_32sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_below="@id/dial_input"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F6F6F6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[0]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[1]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[2]}" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[3]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[4]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[5]}" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[6]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[7]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[8]}" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[9]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[10]}" />
+
+                <Button
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:text="@{list[11]}" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/dial_call"
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:src="@android:drawable/ic_menu_call" />
+
+                <ImageButton
+                    android:id="@+id/dial_delete"
+                    style="@style/DialButton"
+                    android:onClick="@{listener.onClick}"
+                    android:src="@android:drawable/ic_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
