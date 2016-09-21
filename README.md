@@ -4,8 +4,8 @@ This shows how to use **[Data Binding Library](https://developer.android.com/top
 ## ScreenShot(Using ViewPager and RecyclerView with Data Binding Library)
 <div>
 <p>
-<img src="./ScreenShot/device-2016-09-21-152330.png" width = "270" height = "480" alt="Using ViewPager and RecyclerView with Data Binding Library" align="left" />
-<img src="./ScreenShot/device-2016-09-21-152432.png" width = "270" height = "480" alt="Using ViewPager and RecyclerView with Data Binding Library" align="left" />
+<img src="./ScreenShot/device-2016-09-21-152330.png" width = "360" height = "640" alt="Using ViewPager and RecyclerView with Data Binding Library" align="left" />
+<img src="./ScreenShot/device-2016-09-21-152432.png" width = "360" height = "640" alt="Using ViewPager and RecyclerView with Data Binding Library" align="right" />
 </p>
 </div>
 
