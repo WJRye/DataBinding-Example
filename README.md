@@ -1,7 +1,9 @@
 # DataBinding-Example
+
 This shows how to use **[Data Binding Library](https://developer.android.com/topic/libraries/data-binding/index.html)** to develop a App.
 
 ## ScreenShot(Using ViewPager and RecyclerView with Data Binding Library)
+
 <div>
 <p>
 <img src="./ScreenShot/device-2016-09-21-152330.png" width = "360" height = "640" alt="Using ViewPager and RecyclerView with Data Binding Library" align="left" />
@@ -11,7 +13,9 @@ This shows how to use **[Data Binding Library](https://developer.android.com/top
         
         
 <p></p>
+
 ## Listener Bindings
+
 You can bind arbitrary listener you want. For example:
 ```
     <data class="UserBinding">
@@ -61,6 +65,7 @@ You can bind arbitrary listener you want. For example:
 The method addTextChangedListener is in the LoginActivity class.
 
 ## Collections
+
 You can use collections in the layout. For example:
 ```
     <data class="FragmentDialBinding">
@@ -104,7 +109,9 @@ You can use collections in the layout. For example:
         numbers.add("3");
         mFragmentDialBinding.setList(numbers);
 ```
+
 ## include
+
 Data binding supports include,and it's easy to use. For example:
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -159,6 +166,7 @@ user.xml
 
 </layout>
 ```
+
 Note: you should call the method setValue to pass the Variable's value into the included layout.
 
 
